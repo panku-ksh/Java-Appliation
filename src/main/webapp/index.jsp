@@ -8,6 +8,6 @@
 </head>
 <body>
     <h1>Welcome to My Web Application</h1>
-    <p>This is a sample JSP home page For Demo Hands-On.</p>
+    <p>Successfull Deployment with WebHook </p>
 </body>
 </html>
