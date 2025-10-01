@@ -28,7 +28,7 @@
         }
         .pipeline {
             margin: 40px auto;
-            width: 85%;
+            width: 90%;
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
@@ -60,7 +60,7 @@
 <body>
     <header>
         <h1>🚀 Welcome to My DevOps Web Application</h1>
-        <p>Automated Deployment with WebHook (Git → Maven → Jenkins → SonarQube → Tomcat)</p>
+        <p>CI/CD Pipeline with Git, Maven, Jenkins, SonarQube, S3 & Tomcat</p>
     </header>
 
     <section class="pipeline">
@@ -81,13 +81,17 @@
             <p>Code Quality</p>
         </div>
         <div class="step">
+            <h3>☁️ Amazon S3</h3>
+            <p>Artifact Storage</p>
+        </div>
+        <div class="step">
             <h3>☕ Tomcat</h3>
-            <p>Deployment</p>
+            <p>Deployment Server</p>
         </div>
     </section>
 
     <footer>
-        <p>✅ CI/CD Pipeline Demo - Continuous Integration & Deployment</p>
+        <p>✅ CI/CD Pipeline Demo - Last deployed at: <%= new java.util.Date() %></p>
     </footer>
 </body>
 </html>
