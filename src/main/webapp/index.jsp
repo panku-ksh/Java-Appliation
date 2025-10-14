@@ -72,27 +72,6 @@
             color: #555;
         }
 
-        /* Arrow connectors using pseudo-elements */
-        .step:not(:last-child)::after {
-            content: '';
-            position: absolute;
-            top: 50%;
-            right: -60px;
-            width: 50px;
-            height: 4px;
-            background: #007bff;
-            transform: translateY(-50%);
-        }
-
-        .step:not(:last-child)::before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            right: -10px;
-            border: 10px solid transparent;
-            border-left-color: #007bff;
-            transform: translateY(-50%);
-        }
 
         footer {
             margin-top: 50px;
