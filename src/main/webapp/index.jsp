@@ -7,55 +7,90 @@
     <title>DevOps CI/CD Web App</title>
     <link rel="stylesheet" type="text/css" href="assets/style.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #90d6fc;
-            color: #333;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background: #007bff;
-            color: white;
-            padding: 20px 0;
-        }
-        h1 {
-            margin: 0;
-        }
-        p {
-            font-size: 18px;
-        }
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(to right, #90d6fc, #ffffff);
+        color: #333;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background: #0056b3;
+        color: white;
+        padding: 25px 0;
+        box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+        margin: 0;
+        font-size: 2.2em;
+        letter-spacing: 1px;
+    }
+
+    p {
+        font-size: 1.1em;
+        margin: 10px 0 0 0;
+    }
+
+    .pipeline {
+        margin: 50px auto;
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        max-width: 1200px;
+    }
+
+    .step {
+        background: #ffffff;
+        border-radius: 15px;
+        box-shadow: 0px 8px 15px rgba(0,0,0,0.1);
+        padding: 25px;
+        margin: 15px;
+        width: 180px;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .step:hover {
+        transform: translateY(-8px) scale(1.05);
+        box-shadow: 0px 15px 25px rgba(0,0,0,0.2);
+    }
+
+    .step h3 {
+        margin-top: 10px;
+        color: #0056b3;
+        font-size: 1.2em;
+    }
+
+    .step p {
+        margin-top: 5px;
+        font-size: 1em;
+        color: #555;
+    }
+
+    footer {
+        margin-top: 50px;
+        padding: 15px;
+        background: #f0f0f0;
+        font-size: 14px;
+        color: #333;
+        box-shadow: inset 0px 1px 3px rgba(0,0,0,0.1);
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
         .pipeline {
-            margin: 40px auto;
-            width: 90%;
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
         }
+
         .step {
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
-            padding: 20px;
-            margin: 10px;
-            width: 160px;
-            transition: transform 0.2s;
+            width: 250px;
         }
-        .step:hover {
-            transform: scale(1.05);
-        }
-        .step h3 {
-            margin-top: 10px;
-            color: #007bff;
-        }
-        footer {
-            margin-top: 30px;
-            padding: 10px;
-            background: #f1f1f1;
-            font-size: 14px;
-        }
-    </style>
+    }
+</style>
 </head>
 <body>
     <header>
@@ -87,7 +122,7 @@
     </section>
 
     <footer>
-        <p>✅ CI/CD Pipeline Demo - Last deployed at: <%= new java.util.Date() %></p>
+        <p>✅ CI/CD Pipeline Project</p>
     </footer>
 </body>
 </html>
