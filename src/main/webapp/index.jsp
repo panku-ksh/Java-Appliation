@@ -9,7 +9,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: black;
+            background: #90d6fc;
             color: #333;
             text-align: center;
             margin: 0;
@@ -60,7 +60,7 @@
 <body>
     <header>
         <h1>🚀 Welcome to My DevOps Web Application</h1>
-        <p>CI/CD Pipeline with Git, Maven, Jenkins, SonarQube, S3 & Tomcat</p>
+        <p>CI/CD Pipeline with Git, Maven, Jenkins, S3 & Tomcat</p>
     </header>
 
     <section class="pipeline">
@@ -75,10 +75,6 @@
         <div class="step">
             <h3>🛠 Jenkins</h3>
             <p>Pipeline Automation</p>
-        </div>
-        <div class="step">
-            <h3>🔎 SonarQube</h3>
-            <p>Code Quality</p>
         </div>
         <div class="step">
             <h3>☁️ Amazon S3</h3>
