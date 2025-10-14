@@ -34,13 +34,14 @@
         }
 
         .pipeline {
+            margin: 50px auto;
+            width: 90%;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin: 50px auto;
+            flex-wrap: wrap;
             max-width: 1200px;
             position: relative;
-            flex-wrap: wrap;
         }
 
         .step {
@@ -50,8 +51,8 @@
             padding: 25px;
             margin: 20px;
             width: 180px;
-            position: relative;
             transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
         }
 
         .step:hover {
@@ -71,7 +72,7 @@
             color: #555;
         }
 
-        /* Arrows connecting steps */
+        /* Arrow connectors using pseudo-elements */
         .step:not(:last-child)::after {
             content: '';
             position: absolute;
@@ -96,13 +97,11 @@
         footer {
             margin-top: 50px;
             padding: 15px;
-            background: #f0f0f0;
             font-size: 14px;
             color: #333;
-            box-shadow: inset 0px 1px 3px rgba(0,0,0,0.1);
+            text-align: center;
         }
 
-        /* Responsive adjustments */
         @media (max-width: 768px) {
             .pipeline {
                 flex-direction: column;
