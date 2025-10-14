@@ -40,7 +40,7 @@
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
-            max-width: 1200px;
+            max-width: 1300px;
             position: relative;
         }
 
@@ -72,6 +72,29 @@
             color: #555;
         }
 
+        /* Removed arrow connectors */
+        /*
+        .step:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -60px;
+            width: 50px;
+            height: 4px;
+            background: #007bff;
+            transform: translateY(-50%);
+        }
+
+        .step:not(:last-child)::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -10px;
+            border: 10px solid transparent;
+            border-left-color: #007bff;
+            transform: translateY(-50%);
+        }
+        */
 
         footer {
             margin-top: 50px;
@@ -79,6 +102,7 @@
             font-size: 14px;
             color: #333;
             text-align: center;
+            background: #f0f0f0;
         }
 
         @media (max-width: 768px) {
@@ -91,18 +115,13 @@
                 width: 250px;
                 margin: 20px 0;
             }
-
-            .step:not(:last-child)::after,
-            .step:not(:last-child)::before {
-                display: none;
-            }
         }
     </style>
 </head>
 <body>
     <header>
         <h1>🚀 DevOps CI/CD Pipeline</h1>
-        <p>Visual representation of Git → Maven → Jenkins → S3 → Tomcat</p>
+        <p>Visual representation of Git → Maven → Jenkins → Ansible → S3 → Tomcat</p>
     </header>
 
     <section class="pipeline">
@@ -117,6 +136,10 @@
         <div class="step">
             <h3>🛠 Jenkins</h3>
             <p>Pipeline Automation</p>
+        </div>
+        <div class="step">
+            <h3>📦 Ansible</h3>
+            <p>Deploy to Servers</p>
         </div>
         <div class="step">
             <h3>☁️ Amazon S3</h3>
