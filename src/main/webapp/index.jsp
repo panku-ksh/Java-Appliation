@@ -96,18 +96,13 @@
 <body>
     <header>
         <h1>🚀 DevOps CI/CD Pipeline</h1>
-        <p>Visual representation of GitHub → Webhook → Jenkins → Maven → S3 → Ansible → Tomcat</p>
+        <p>Visual representation of GitHub → Jenkins → Maven → S3 → Ansible → Tomcat</p>
     </header>
 
     <section class="pipeline">
         <div class="step">
             <h3>📂 GitHub</h3>
             <p>Source Code Repository</p>
-        </div>
-
-        <div class="step">
-            <h3>🔔 Webhook</h3>
-            <p>Triggers Jenkins Automatically on Code Push</p>
         </div>
 
         <div class="step">
