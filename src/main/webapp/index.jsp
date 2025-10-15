@@ -35,12 +35,12 @@
 
         .pipeline {
             margin: 50px auto;
-            width: 90%;
+            width: 95%;
             display: flex;
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
-            max-width: 1200px;
+            max-width: 1300px;
             position: relative;
         }
 
@@ -72,7 +72,6 @@
             color: #555;
         }
 
-
         footer {
             margin-top: 50px;
             padding: 15px;
@@ -91,45 +90,54 @@
                 width: 250px;
                 margin: 20px 0;
             }
-
-            .step:not(:last-child)::after,
-            .step:not(:last-child)::before {
-                display: none;
-            }
         }
     </style>
 </head>
 <body>
     <header>
         <h1>🚀 DevOps CI/CD Pipeline</h1>
-        <p>Visual representation of Git → Maven → Jenkins → S3 → Tomcat</p>
+        <p>Visual representation of GitHub → Webhook → Jenkins → Maven → S3 → Ansible → Tomcat</p>
     </header>
 
     <section class="pipeline">
         <div class="step">
-            <h3>📂 Git</h3>
-            <p>Source Code</p>
+            <h3>📂 GitHub</h3>
+            <p>Source Code Repository</p>
         </div>
+
         <div class="step">
-            <h3>⚙️ Maven</h3>
-            <p>Build & Package</p>
+            <h3>🔔 Webhook</h3>
+            <p>Triggers Jenkins Automatically on Code Push</p>
         </div>
+
         <div class="step">
             <h3>🛠 Jenkins</h3>
-            <p>Pipeline Automation</p>
+            <p>Pipeline Automation & Integration</p>
         </div>
+
+        <div class="step">
+            <h3>⚙️ Maven</h3>
+            <p>Build & Package Application</p>
+        </div>
+
         <div class="step">
             <h3>☁️ Amazon S3</h3>
-            <p>Artifact Storage</p>
+            <p>Stores Build Artifacts</p>
         </div>
+
+        <div class="step">
+            <h3>🤖 Ansible</h3>
+            <p>Provision Tomcat Server & Deploy Artifacts</p>
+        </div>
+
         <div class="step">
             <h3>☕ Tomcat</h3>
-            <p>Deployment Server</p>
+            <p>Application Deployment Server</p>
         </div>
     </section>
 
     <footer>
-        <p>✅ CI/CD Pipeline Project</p>
+        <p>✅ CI/CD Pipeline Project using GitHub, Jenkins, S3, Ansible & Tomcat</p>
     </footer>
 </body>
 </html>
